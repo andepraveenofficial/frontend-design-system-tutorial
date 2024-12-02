@@ -84,6 +84,8 @@ export default preview;
 
 ### Design System
 
-```
+1. variant
+2. size
+3. functions
 
-```
+

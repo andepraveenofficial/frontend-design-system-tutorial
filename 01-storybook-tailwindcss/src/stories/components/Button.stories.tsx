@@ -15,7 +15,7 @@ const meta: Meta<StoryProps> = {
 	component: Button,
 	argTypes: {
 		variant: {
-			options: ["primary", "secondary"],
+			options: ["primary", "secondary", "danger"],
 			control: { type: "select" },
 		},
 		size: {
@@ -49,6 +49,17 @@ export const Primary: StoryObj<StoryProps> = {
 export const Secondary: StoryObj<StoryProps> = {
 	args: {
 		variant: "secondary",
+		size: "md",
+		buttonText: "Button",
+		// onClick: () => console.log("Button clicked"), // Provide a default function
+	},
+	render: ({ buttonText, ...args }) => <Button {...args}>{buttonText}</Button>,
+};
+
+// Define the 'Danger' story
+export const Danger: StoryObj<StoryProps> = {
+	args: {
+		variant: "danger",
 		size: "md",
 		buttonText: "Button",
 		// onClick: () => console.log("Button clicked"), // Provide a default function

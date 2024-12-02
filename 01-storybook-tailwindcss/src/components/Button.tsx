@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from "react";
 
 /* -----> ComponentProps <----- */
 type ButtonProps = PropsWithChildren<{
-	variant: "primary" | "secondary";
+	variant: "primary" | "secondary" | "danger";
 	size: "sm" | "md" | "lg";
 	onClick?: () => void;
 }>;
@@ -17,8 +17,9 @@ const Button: React.FC<ButtonProps> = ({
 	// Tailwind classes for different variants
 	// Record<KeyType, ValueType>
 	const variantClasses: Record<ButtonProps["variant"], string> = {
-		primary: "bg-blue-500 text-white", // Blue background, white text
-		secondary: "bg-gray-500 text-black", // Gray background, black text
+		primary: "text-white bg-blue-700 hover:bg-blue-800", // Blue background, white text
+		secondary: "text-white bg-gray-800 hover:bg-gray-900", // Gray background, white text
+		danger: "text-white bg-red-700 hover:bg-red-800", // Gray background, white text
 	};
 
 	// Tailwind classes for different sizes
@@ -35,8 +36,6 @@ const Button: React.FC<ButtonProps> = ({
         ${sizeClasses[size]}         
         rounded-md                  
         outline-none border-none cursor-pointer
-        hover:opacity-80             
-        transition duration-300
       `}
 			onClick={onClick}
 		>
