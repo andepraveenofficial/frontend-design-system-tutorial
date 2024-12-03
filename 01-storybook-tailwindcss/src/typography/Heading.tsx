@@ -65,7 +65,7 @@ const Heading: React.FC<HeadingProps> = ({
     colorClasses[color],
     alignClasses[align],
     className // Custom classes are applied last to allow overriding
-  ].filter(Boolean).join(" "); // Filter out any falsy values before joining
+  ].join(" "); // Filter out any falsy values before joining
 
   // Render the appropriate heading element based on variant
   const Component = variant;
