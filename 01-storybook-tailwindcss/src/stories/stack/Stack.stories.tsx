@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Stack from "../../stack/Stack";
+import Stack from "../../library/stack/Stack";
 import { ComponentProps } from "react";
 
 // Helper function to create children elements
