@@ -1,14 +1,16 @@
 import Button from "./components/Button";
+import Heading from "./components/Heading";
 
 const App = () => {
 	return (
-		<Button
-			variant="primary"
-			size="md"
-			onClick={() => console.log("Button clicked")}
-		>
-			Button
-		</Button>
+		<>
+			<Button
+				onClick={() => console.log("Button clicked")}
+			>
+				Button
+			</Button>
+			<Heading>Heading</Heading>
+		</>
 	);
 };
 
