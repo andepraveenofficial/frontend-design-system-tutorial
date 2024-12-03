@@ -12,6 +12,9 @@ type StoryProps = ComponentProps<typeof Button> & {
 const meta: Meta<StoryProps> = {
   title: "Components/Button",
   tags: ["autodocs"],
+  parameters: {
+    layout: 'centered',
+  },
   component: Button,
   argTypes: {
     variant: {
