@@ -3,6 +3,7 @@
 ### Techstack
 
 1. UI Layer : React
+2. Language : Typescript
 2. Styling : Tailwindcss
 
 ### Setup : Tailwindcss

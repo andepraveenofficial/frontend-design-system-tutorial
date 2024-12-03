@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Paragraph from '../../typography/Paragraph';
+import Paragraph from '../../library/typography/Paragraph';
 import { ComponentProps } from 'react';
 
 type StoryProps = ComponentProps<typeof Paragraph> & {

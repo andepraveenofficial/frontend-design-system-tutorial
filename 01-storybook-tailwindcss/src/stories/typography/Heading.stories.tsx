@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Heading from '../../typography/Heading';
+import Heading from '../../library/typography/Heading';
 import { ComponentProps } from 'react';
 
 

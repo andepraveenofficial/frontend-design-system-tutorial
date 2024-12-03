@@ -1,6 +1,6 @@
-import Button from "./components/Button";
-import Heading from "./typography/Heading";
-import Paragraph from "./typography/Paragraph";
+import Button from "./library/components/Button";
+import Heading from "./library/typography/Heading";
+import Paragraph from "./library/typography/Paragraph";
 
 const App = () => {
 	return (
