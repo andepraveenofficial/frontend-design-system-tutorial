@@ -1,4 +1,4 @@
-import { Button } from "./library/components";
+import { Button, Item, List } from "./library/components";
 import { Input } from "./library/form";
 import { Stack } from "./library/stack";
 import { Heading, Paragraph } from "./library/typography";
@@ -33,6 +33,14 @@ const App = () => {
 			<hr />
 
 			<Input />
+			<hr />
+
+			<List>
+				<Item>Item 1</Item>
+				<Item>Item 2</Item>
+				<Item>Item 3</Item>
+				<Item>Item 4</Item>
+			</List>
 			<hr />
 		</>
 	);
