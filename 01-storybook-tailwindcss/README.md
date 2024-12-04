@@ -4,7 +4,7 @@
 
 1. UI Layer : React
 2. Language : Typescript
-2. Styling : Tailwindcss
+3. Styling : Tailwindcss
 
 ### Setup : Tailwindcss
 
@@ -55,7 +55,7 @@ export default {
 
 ```ts preview.ts
 import type { Preview } from "@storybook/react";
-import "../src/index.css";
+import "../src/index.css"; // Add this line
 
 const preview: Preview = {
 	parameters: {
@@ -88,5 +88,3 @@ export default preview;
 1. variant
 2. size
 3. functions
-
-
