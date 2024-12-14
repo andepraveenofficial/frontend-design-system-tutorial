@@ -10,7 +10,7 @@ const meta: Meta<StoryProps> = {
   title: 'Typography/Paragraph',
   component: Paragraph,
   parameters: {
-    layout: 'centered',
+    layout: '',
   },
   tags: ['autodocs'],
   argTypes: {
@@ -66,9 +66,9 @@ const meta: Meta<StoryProps> = {
 export default meta;
 
 // Basic examples
-export const Basic: StoryObj<StoryProps> = {
+export const Default: StoryObj<StoryProps> = {
   args: {
-    paragraphText: 'This is a basic paragraph with default styling.',
+    paragraphText: 'Default paragraph with standard styling.',
   },
   render: ({ paragraphText, ...args }) => <Paragraph {...args}>{paragraphText}</Paragraph>,
 };

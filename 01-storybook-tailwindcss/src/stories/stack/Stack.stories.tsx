@@ -55,6 +55,18 @@ const meta: Meta<StoryProps> = {
 
 export default meta;
 
+// Define the 'Default' story
+export const Default: StoryObj<StoryProps> = {
+  args: {
+    numberOfChildren: 3,
+  },
+  render: ({ numberOfChildren, ...args }) => (
+    <Stack {...args}>
+      {createChildren(numberOfChildren)}
+    </Stack>
+  ),
+};
+
 // Define the 'Horizontal' story
 export const Horizontal: StoryObj<StoryProps> = {
   args: {

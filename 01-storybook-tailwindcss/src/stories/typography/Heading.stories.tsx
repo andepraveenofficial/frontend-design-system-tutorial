@@ -11,7 +11,7 @@ const meta: Meta<StoryProps>= {
   title: 'Typography/Heading',
   component: Heading,
   parameters: {
-    layout: 'centered',
+    layout: '',
   },
   tags: ['autodocs'],
   argTypes: {
@@ -21,6 +21,7 @@ const meta: Meta<StoryProps>= {
       table: {
         defaultValue: { summary: "Heading" },
       },
+    },
     variant: {
       control: 'select',
       options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
@@ -57,18 +58,17 @@ const meta: Meta<StoryProps>= {
     }
   },
 }
-};
+
 
 export default meta;
 
 
-// Basic examples
-export const Basic:StoryObj< StoryProps> = {
+// Default example
+export const Default: StoryObj<StoryProps> = {
   args: {
-    headingText: 'Basic Header',
+    headingText: 'Default',
   },
   render: ({ headingText, ...args }) => <Heading {...args}>{headingText}</Heading>,
-
 };
 
 // Variants
@@ -129,7 +129,7 @@ export const Heading6: StoryObj<StoryProps> = {
 export const PrimaryColor: StoryObj<StoryProps> = {
   args: {
     color: 'primary',
-    headingText: 'Primary colored heading',
+    headingText: 'Primary',
   },
   render: ({ headingText, ...args }) => <Heading {...args}>{headingText}</Heading>,
 
@@ -138,7 +138,7 @@ export const PrimaryColor: StoryObj<StoryProps> = {
 export const SecondaryColor: StoryObj<StoryProps> = {
   args: {
     color: 'secondary',
-    headingText: 'Secondary colored heading',
+    headingText: 'Secondary',
   },
   render: ({ headingText, ...args }) => <Heading {...args}>{headingText}</Heading>,
 
@@ -147,7 +147,7 @@ export const SecondaryColor: StoryObj<StoryProps> = {
 export const DangerColor: StoryObj<StoryProps> = {
   args: {
     color: 'danger',
-    headingText: 'Danger colored heading',
+    headingText: 'Danger',
   },
   render: ({ headingText, ...args }) => <Heading {...args}>{headingText}</Heading>,
 
@@ -156,7 +156,7 @@ export const DangerColor: StoryObj<StoryProps> = {
 // Alignment variations
 export const LeftAligned: StoryObj<StoryProps> = {
   args: {
-    headingText: 'This is a longer text that demonstrates justified alignment. It should span multiple lines to show the effect.',
+    headingText: 'Left Heading',
     align: 'left',
   },
   render: ({ headingText, ...args }) => <Heading {...args}>{headingText}</Heading>,
@@ -165,7 +165,7 @@ export const LeftAligned: StoryObj<StoryProps> = {
 
 export const CenterAligned: StoryObj<StoryProps> = {
   args: {
-    headingText: 'This is a longer text that demonstrates justified alignment. It should span multiple lines to show the effect.',
+    headingText: 'Center Heading',
     align: 'center',
   },
   render: ({ headingText, ...args }) => <Heading {...args}>{headingText}</Heading>,
@@ -174,7 +174,7 @@ export const CenterAligned: StoryObj<StoryProps> = {
 
 export const RightAligned: StoryObj<StoryProps> = {
   args: {
-    headingText: 'This is a longer text that demonstrates justified alignment. It should span multiple lines to show the effect.',
+    headingText: 'Right Heading',
     align: 'right',
   },
   render: ({ headingText, ...args }) => <Heading {...args}>{headingText}</Heading>,

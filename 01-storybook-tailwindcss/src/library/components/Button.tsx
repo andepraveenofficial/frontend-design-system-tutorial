@@ -36,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({
   className = "",
 }) => {
   // Base classes always applied
-  const baseClasses = "rounded-md font-medium transition-all duration-200 flex items-center justify-center gap-2";
+  const baseClasses = "rounded-md font-medium transition-all duration-200 inline-flex items-center justify-center gap-2";
 
   // Different variants
   const variantClasses: Record<ButtonVariant, string> = {

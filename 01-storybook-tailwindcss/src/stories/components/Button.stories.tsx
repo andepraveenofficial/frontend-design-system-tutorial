@@ -71,6 +71,14 @@ const meta: Meta<StoryProps> = {
 
 export default meta;
 
+// Define the 'Default' story
+export const Default: StoryObj<StoryProps> = {
+  args: {
+    buttonText: "Button",
+  },
+  render: ({ buttonText, ...args }) => <Button {...args}>{buttonText}</Button>,
+};
+
 // Define the 'Primary' story
 export const Primary: StoryObj<StoryProps> = {
   args: {
@@ -156,7 +164,7 @@ export const FullWidth: StoryObj<StoryProps> = {
 export const WithCustomClass: StoryObj<StoryProps> = {
   args: {
     buttonText: "Button",
-    className: 'italic underline decoration-2 underline-offset-4 hover:text-blue-800',
+    className: 'italic underline hover:text-red-800 hover:bg-yellow-300',
   },
  
   render: ({ buttonText, ...args }) => (
